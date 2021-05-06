@@ -11,7 +11,10 @@ define([
 		[k.Shortcuts.MoveTabLeft]: "ctrl+[",
 		[k.Shortcuts.MoveTabRight]: "ctrl+]",
 		[k.Shortcuts.CopyURL]: "mod+c",
-		[k.Shortcuts.CopyTitleURL]: "mod+shift+c"
+		[k.Shortcuts.CopyTitleURL]: "mod+shift+c",
+		[k.Shortcuts.SelectPreviousItem]: "ctrl+p",
+		[k.Shortcuts.SelectNextItem]: "ctrl+n",
+		[k.Shortcuts.EscapeBehavior]: "",
 	};
 		// we can't use cmd+W on Mac to close the tab selected in the menu
 		// because the browser intercepts that and closes the current tab, so

@@ -107,7 +107,22 @@ define([
 				id: k.Shortcuts.CopyTitleURL,
 				label: <span>Copy the <b>title and URL</b> of the selected item</span>,
 				validate: validateSomeModifier
-			}
+			},
+			{
+				id: k.Shortcuts.SelectPreviousItem,
+				label: <span>Select the <b>previous</b> item.</span>,
+				validate: validateSomeModifier
+			},
+			{
+				id: k.Shortcuts.SelectNextItem,
+				label: <span>Select the <b>next</b> item.</span>,
+				validate: validateSomeModifier
+			},
+			{
+				id: k.Shortcuts.EscapeBehavior,
+				label: <span>Act as another <b>escape</b> key.</span>,
+				validate: validateSomeModifier
+			},
 		],
 		fixed: [
 			{

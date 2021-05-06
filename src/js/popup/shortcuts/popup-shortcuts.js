@@ -44,7 +44,10 @@ define([
 		[k.Shortcuts.MoveTabLeft]: event => moveTab(-1, event.shiftKey),
 		[k.Shortcuts.MoveTabRight]: event => moveTab(1, event.shiftKey),
 		[k.Shortcuts.CopyURL]: () => self.copyItemURL(selectedTab(), false),
-		[k.Shortcuts.CopyTitleURL]: () => self.copyItemURL(selectedTab(), true)
+		[k.Shortcuts.CopyTitleURL]: () => self.copyItemURL(selectedTab(), true),
+		[k.Shortcuts.SelectPreviousItem]: () => self.modifySelected(-1),
+		[k.Shortcuts.SelectNextItem]: () => self.modifySelected(1),
+		[k.Shortcuts.EscapeBehavior]: event => self.clearQuery(event.target.value),
 	};
 	const ShiftShortcuts = {
 		[k.Shortcuts.MoveTabLeft]: 1,
